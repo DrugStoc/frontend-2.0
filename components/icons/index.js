@@ -1,0 +1,43 @@
+import DeleteIcon from '@mui/icons-material/Delete';
+import MenuIcon from '@mui/icons-material/Menu';
+import UserIcon from '@mui/icons-material/PersonRounded';
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
+import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+import VaccinesRoundedIcon from '@mui/icons-material/VaccinesRounded';
+import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
+import CategoryIcon from '@mui/icons-material/CategoryRounded';
+import FactoryRoundedIcon from '@mui/icons-material/FactoryRounded';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
+import AutorenewRoundedIcon from '@mui/icons-material/AutorenewRounded';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import RestorePageOutlinedIcon from '@mui/icons-material/RestorePageOutlined';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
+
+
+export const Delete = DeleteIcon;
+export const Menu = MenuIcon;
+export const User = UserIcon;
+export const Personal = AccountBoxOutlinedIcon;
+export const Business = BusinessOutlinedIcon;
+export const Category = CategoryIcon;
+export const Manufacturers = FactoryRoundedIcon;
+export const Cart = ShoppingCartOutlinedIcon;
+export const History = AccessTimeOutlinedIcon;
+export const Wallet = AccountBalanceWalletOutlinedIcon;
+export const Document = ArticleOutlinedIcon;
+export const Shipping = LocalShippingOutlinedIcon;
+export const MyDrugStoc = VaccinesRoundedIcon;
+export const ReOrder = AutorenewRoundedIcon;
+export const Favorite = FavoriteBorderOutlinedIcon;
+export const OrderHistory = RestorePageOutlinedIcon;
+export const Help = HelpOutlineOutlinedIcon;
+export const Terms = InfoOutlinedIcon;
+export const More = MoreVertIcon;
+export const LogOut = LogoutOutlinedIcon;
