@@ -24,6 +24,7 @@ COPY . .
 # RUN yarn build
 
 # If using npm comment out above and use below instead
+RUN npm install -g npm@8.11.0
 RUN npm run build
 
 # Production image, copy all the files and run next
@@ -53,4 +54,4 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-CMD ["node", "server.js"]
+CMD ["npm", "run", "dev"]

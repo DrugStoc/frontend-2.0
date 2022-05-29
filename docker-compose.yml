@@ -4,9 +4,9 @@ services:
     
   app:
     build:
-      context: .
+      context: ./
     container_name: eccommerce
     ports: 
       - '3000:3000'
     volumes:
-      - ./app:/app
+      - .:/app
