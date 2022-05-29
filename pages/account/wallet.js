@@ -100,10 +100,10 @@ function Wallet(props) {
         <Stack direction="row" spacing={3} justifyContent="space-between">
           <div>
             <Title variant="h5">Wallet Balance</Title>
-            <Title variant="h4">
+            {props.userWallet.results.length > 0  ? <Title variant="h4">
               {priceFormatDecimal(props.userWallet.results[0].balance)}
-            </Title>
-            <Stack direction="row" spacing={3} sx={{ marginTop: 1 }}>
+            </Title>: null}
+            { props.userWallet.results.length > 0 ? <Stack direction="row" spacing={3} sx={{ marginTop: 1 }}>
               <Content variant="h6">
                 Available Balance:{" "}
                 {priceFormatDecimal(props.userWallet.results[0].balance)}
@@ -111,7 +111,7 @@ function Wallet(props) {
               <Content variant="h6">
                 Legal Balance: {priceFormatDecimal(0)}
               </Content>
-            </Stack>
+            </Stack> : null}
           </div>
           <Stack direction="row" spacing={3} height={35}>
             <Button
@@ -127,7 +127,7 @@ function Wallet(props) {
           </Stack>
         </Stack>
         <Divider sx={{ marginTop: 2, marginBottom: 4 }} />
-        {props.userWallet ? (
+        {props.userWallet.results.length > 0  ? (
           <Transaction wallet={props.userWallet.results[0].id} />
         ) : (
           <Content>Loading.....</Content>

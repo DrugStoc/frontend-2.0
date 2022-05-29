@@ -77,7 +77,9 @@ function Navbar({ user, getUserData, getCategory, category, search }) {
 
   const query = (e) => {
       router.push({ pathname: "/search", query: { search: e.target.value} });
-      search(e.target.value)
+      if (e.target.value.length > 0) {
+        search(e.target.value)
+      }
   }
 
   return (

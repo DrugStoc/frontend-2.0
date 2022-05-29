@@ -117,11 +117,11 @@ function CartItem(props) {
           </Box>
         </Stack>
         <Box sx={{ alignContent: "center" }}>
-          <Title variant="h6" sx={{ textAlign: "right" }}>
-            {priceFormat(props.data.product.price * props.data.quantity)}
+          <Title variant="h6" sx={{ textAlign: "right", filter: props.data.product.price ? "blur(0px)" : "blur(5px)",}}>
+            {props.data.product.price ? priceFormat(props.data.product.price * props.data.quantity) : "PRICE NOT AVAILABLE"}
           </Title>
-          <Content sx={{ textAlign: "right", fontSize: 12 }}>
-            {priceFormat(props.data.product.price)} x {props.data.quantity}{" "}
+          <Content sx={{ textAlign: "right", fontSize: 12, filter: props.data.product.price ? "blur(0px)" : "blur(5px)", }}>
+            {props.data.product.price ? priceFormat(props.data.product.price) : "PRICE NOT AVAILABLE" } x {props.data.quantity}{" "}
             item(s)
           </Content>
         </Box>
