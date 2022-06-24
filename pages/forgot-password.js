@@ -23,7 +23,7 @@ function ForgotPassword(props) {
   } = useForm();
   const notify = async () => {
     const data = axios.get(
-      "http://localhost:8000/api/v2/account/profile", {
+      "http://staging.drugstoc.com/api/v2/account/profile", {
         headers: {
             "Content-Type": "application/json",
             "Authorization": "Token 071bbedc1bc3cc16dbce17baa91321b7597035a1"
@@ -51,10 +51,8 @@ function ForgotPassword(props) {
         gutterBottom
         sx={{ width: "fit-content", marginLeft: "auto" }}
       >
-        Go back to?{" "}
-        <Link underline="none" sx={{ cursor: "pointer" }} href="/login">
-          Sign in
-        </Link>
+
+
       </Content>
       <Center>
         <Title variant="h5">Welcome Back to DrugStoc</Title>
@@ -68,7 +66,7 @@ function ForgotPassword(props) {
           rules={{
             required: {
               value: true,
-              message: "Please your valid email is required",
+              message: "Email Address: Incorrect email or email doesnt exist ",
             },
           }}
           render={({ field }) => (
@@ -87,6 +85,7 @@ function ForgotPassword(props) {
               )}
             </FormGroup>
           )}
+
         />
 
         <FormGroup sx={{ marginTop: "10px" }}>
@@ -94,6 +93,18 @@ function ForgotPassword(props) {
             Reset password
           </Button>
         </FormGroup>
+
+          <Content sx={{ textAlign: "center", fontSize: "13px" }}>
+              <Link underline="none" sx={{ cursor: "pointer" }} href="/login">
+                  Login
+              </Link>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span>|</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Link underline="none" sx={{ cursor: "pointer" }} href="/register">
+                 Create Account
+              </Link>
+          </Content>
       </Center>
     </AuthenticationsLayout>
   );

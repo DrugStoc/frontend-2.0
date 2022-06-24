@@ -35,8 +35,8 @@ Sliders.propTypes = {
 };
 
 Sliders.defaultProps = {
-  image: "/no_image.png",
-  data: ["/image1.jpeg", "/image2.jpeg", "/image3.jpeg"]
+  image: "/BANNER SLIDER3.jpg",
+  data: ["/BANNER SLIDER1.jpg", "/BANNER SLIDER2.jpg", "/BANNERSLIDER4.jpeg"]
 };
 
 const mapStateToProps = (state) => ({});
